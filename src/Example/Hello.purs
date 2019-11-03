@@ -35,7 +35,9 @@ render state =
       then
         []
       else
-        [ HP.href "https://github.com"]
+        [ HP.href "https://github.com"
+        , HH.attr (HH.AttrName "title") "hello"
+        ]
     )
     [ HH.text "hello" ]
   , HH.button
